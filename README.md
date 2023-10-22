@@ -1,21 +1,22 @@
+## Description
+- A NestJs server-side application that  handle User Management (using Keycloak API), 
+repo had 4 endpoints:
+- Create user – After creating the user, user should be able to login
+- Update user – Updating basic attributes like firstname, lastname
+- Get User by Id – Get user object back using keycloak generated id
+- Get all Users – Get users array back using keycloak
+- The application containerized with proper docker file .
+
+
+## The Architecture Design 
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://github.com/mohamedlotfe/nestjs-keycloak-auth/blob/main/public/flow.png"  alt="Nest Logo" /></a>
 </p>
 
+## Postman Endpoints
+[exported postman collection]([https://www.npmjs.com/package/@keycloak/keycloak-admin-client](https://github.com/mohamedlotfe/nestjs-keycloak-auth/blob/main/repo.postman_collection.json))
 
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-simple NestJS/Typescript application to handle User Management (using Keycloak API):
-1. User can have scopes. (location or business unit based scopes)
-2. User can have roles. (MANAGE_USER, MANAGE_SCOPES)
-
-repo had 4 endpoints:
-• Create user – After creating the user, user should be able to login
-• Update user – Updating basic attributes like firstname, lastname
-• Get User by Id – Get user object back using keycloak generated id
-• Get all Users – Get users array back using keycloak
 
 
 ## Installation
@@ -28,19 +29,16 @@ $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay
 $ npm install
 ```
 
-## Running the app
+## Running the app without docker
 
 ```bash
-# development
-$ npm run start
+# installation 
+$ npm install
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
-### or 
+## Running using docker
 
 ```bash
 # build an image
