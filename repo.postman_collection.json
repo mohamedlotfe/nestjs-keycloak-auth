@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "957a6f67-fd8a-4656-a124-fba39d5762f4",
+		"name": "nestjs-Keycloak-repo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2585636",
+		"_collection_link": "https://plutus-collection-406906.postman.co/workspace/My-Workspace~53b596ca-b084-40e7-8293-2eaca332a560/collection/2585636-957a6f67-fd8a-4656-a124-fba39d5762f4?action=share&source=collection_link&creator=2585636"
+	},
+	"item": [
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"update fname\",\n    \"id\" :\"7d64a706-019a-43ac-bf11-99a5d3a5829c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"lolo4\",\n    \"password\": \"lolo4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/8561dc9a-56ad-4e1d-bf64-d75509e2a441",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"8561dc9a-56ad-4e1d-bf64-d75509e2a441"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
